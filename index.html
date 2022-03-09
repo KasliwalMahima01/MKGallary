@@ -4,99 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <title>MKGallary</title>
+    <title>Hotel Services | Home </title>
 </head>
-<style>
-     #header{
-    color:#fff;
+<script src="./backend.js"></script>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
 
-    height:577px;
-    background:url('imgs/bg.jpg'); 
+
+<!--_______ CSS CODING ______-->
+<style>
+    .header{
+    color: black;
+    margin:0px;
+    padding:0px;
+    height:600px;
+    background-image:url('./Imgs/bg.jpg'); 
     background-position: center;
     background-repeat:no-repeat;
-    background-size:100%;
-    /* THIS below both z index and opacity is used for blur the background image */
-    z-index: -1; 
-    opacity:0.80 ;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background-size: cover;
     }
-</style>
-<body style="margin:0px";>
-    <section id ="header">
-       
+   </style>
+
+  
+<body>
+
+    <!-- _______ FOR MENU BAR _______ -->
+    <section  class="header">
         <!-- Left box for logo -->
         <div class="left">
-           
-            <img src="imgs/logo.jpg" style="margin-left: 17%;"> <br>
-            <span> MK GALLARY</span> 
+            <img src="./Imgs/logo.png" alt="">
+            <!-- <div>Hotel Stay</div> -->
         </div>
-    
-           
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="./Index.html" class="active"> Home</a></li>
+                <li><a href="./About.html"> About us</a></li>
+                <li><a href="./services.html"> Services</a></li>
+                <li><a href="./contact.html"> Contact Us</a></li>
+            </ul>
         </div>
         <!-- right box for buttons -->
         <div class="right">
-            <ul class="navbar">
-                <li><a href="homepage.html"class="active">Home</a></li>
-                <li><a href="gallery.html">Art Gallary</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <!-- <li><a href="login.html">Sign In</a></li> -->
-               
-            </ul>
+            <button class="btn" onclick="CallUs()">Call Us Now</button>
+            <button class="btn" onclick="EmailUs()">Email us</button>
         </div>
-
-        <div class="textbox">
-            <h6>Welcome to!</h6>
-          <h1>  MK GALLARY</h1>
-          <h3> Real Art Real People  </h3>
-          <p> An Exculsive partnership presenting  <br>original Artwork from Top Emerging Artists</p>
-
-          <a href="" class=" mid-btn"> <b> &nbsp; Visit us To Know More &nbsp; </b></a>
-
-        </div>
-      </section> 
-
-
-
-
-  <!--_______FOR AIM ______ -->   
-  <section id="services-container">
-    <!-- <h1 class="headline">WE PROVIDE YOU </h1> -->
-    <div id="services">
-        <div class="box">
-            <img src="imgs/paint.png" alt=""> 
-            <h2 class="h-secondary center">Authentic, handcraft art</h2>
-            <p>Shop original, Unique and Affordable art from thousands of artists around the world.</p>
-            
-        </div>
-        <div class="box">
-            <img src="imgs/contact.png" alt=""> 
-            <h2 class="h-secondary center">Support, <br>Independent Artists</h2>
-             <p>Buy directly from an Artist, helping them to make a living doing what they love</p>
-        </div>
-        <div class="box">
-           <img src="imgs/travel.jpg" alt="">
-           <h2 class="h-secondary center">Risk-Free shopping</h2>
-           <p>Secure transactions,free 14-day returns. Full peace of mind, gauranteed</p>        
-        </div>
+        
+        <!-- _______FOR HOTEL MIDDLE PART______ -->
+    <div class="textbox">
+       
+        <strong> Welcome to HOTEL STAY </strong>
+        <p> A Hotel isn't Like a home, But It's Better Thsn Being a house Guest </p> 
+        <a href="" class=" mid-btn">Visit us To Know More</a>
     </div>
-
-    
-
- 
-     
+    </section>
 
 
+     <!--_______FOR AIM OF HOTEL______ -->   
+            <section id="services-container">
+                <h1 class="headline">WE PROVIDE YOU </h1>
+                <div id="services">
+                    <div class="box">
+                        <img src="./Imgs/FOOD.png" alt="">
+                        <h2 class="h-secondary center">BEST FOOD SERVICES</h2>
+                        
+                    </div>
+                    <div class="box">
+                        <img src="./Imgs/WIFI.jpg" alt="">
+                        <h2 class="h-secondary center"> 24*7 FREE WIFI SERVICES</h2>
+   
+                    </div>
+                    <div class="box">
+                       <img src="./Imgs/ROOM.png" alt="">
+                       <h2 class="h-secondary center">BEST ROOM SERVICES</h2>        
+                    </div>
+                </div>
+            </section>
 
+        
+    <!-- _______ FOR Activities _______ -->
+             <section class="activities">
+                <h1>ACTIVITIES & HOTEL SECTION</h1>  <br>
+               
+               <div class="row">
 
- <section class= "footer">
-     <p> All Copyrights reserved by Mahima Kasliwal 2022 </p>
- </section>
+                <div class="activity-col">
+                    <img src="./Imgs/terrace.jpg" width="100%">
+                    <div class="layer">
+                        <h3> Terrace Restaurant</h3>
+                    </div>
+                </div>
 
-      
+                <div class="activity-col ">
+                    <img src="./Imgs/pool.jpg" width="100%" height="110%">
+                    <div class="layer">
+                        <h3> Swimming Pool</h3>
+                    </div>
+                </div>
+            <div class="activity-col">
+                    <img src="./Imgs/gym.jpg" width="100%">
+                    <div class="layer">
+                        <h3> Gym and Fitness </h3>
+                    </div>
+            </div> <br>
+               
+                 </div>
+            </section>
+            
+
+            <!-- _____ FOR EVENTS______ -->
+            <section class="event-container">
+                <h1>EVENTS </h1> 
+                <div class="event-row">
+                    <div class="event-col">
+                        <img src="./Imgs/meeting hall.jpg" width="100%" height="80%">
+                        <div class="etext">
+                            <h3> MEETINGS AND EVENTS</h3>
+                            <p>The flexible,formal spaces encourage creativity and innovation and can be used for intimate presentations and workshops as well as large-scale press conferences.</p>
+                        </div>
+                    </div>
+                <div class="event-row">
+                    <div class="event-col">
+                        <img src="./Imgs/weedinghall.jpg" width="100%"> <br>
+                        <div class="etext">
+                            <h3> MARRAGE EVENTS</h3>
+                            <p>There is lots of spaces encourage creativity and innovation and can be used for wedding events  as well as wedding receptions.</p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </section>
+
+    <!-- _______ FOR FOOTER _______ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h2>ABOUT US</h2> 
+                <p>You Can Connect Us On</p>
+                <br>
+                <a href="#" class="fa fa-facebook"></a>  
+                <a href="#" class="fa fa-twitter"></a>   
+                <a href="#" class="fa fa-linkedin"></a>  
+                <a href="#" class="fa fa-instagram"></a>   
+                 
+            </div> <br>
+            <h4> @ All copyrights are Reserved By Mahima Kasliwal </h4>
+        </div>
+    </footer>
+
 </body>
 </html>
