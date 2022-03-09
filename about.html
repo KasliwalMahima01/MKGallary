@@ -1,111 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="./backend.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>About us</title>
+    <title>Hotel Services | About us </title>
 </head>
-<style>
-    body{
-        /* padding:10px; */
-        box-sizing: border-box;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    }
-    .content{
-        float: left;
-        width: 55%;
-    }
-    .img-section{
-        float: right;
-        width: 40%;
-    }
-    .article{
-        font-size: 20px;
-        margin-top: 5%;
-    }
-    .fa {  
-    padding: 10px;  
-    text-align:center;  
-    font-size: 20px;  
-    width: 100px; 
-    border-radius: 20px;
-     }  
-  .fa-facebook {  
-    background: #3B5998;  
-    color: white; 
-   
-  }  
-  .fa-twitter {  
-    background: #55ACEE;  
-    color: white; 
-   }    
-  .fa-linkedin {  
-    background: #007bb5;  
-    color: white; 
-     }  
-  .fa-instagram {  
-    background: #b91554;  
-    color: white;  
-   }  
-   .fa:hover {  
-      opacity:0.7;  
-    }  
+<link rel="stylesheet" href="./css/style.css">
 
-</style>
-<body style="margin:0px";>
-     
-    <section id ="header">
-       
+<style>
+    .sub-header {
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    color: black;
+    margin:0px;
+    padding:0px;
+    height:400px;
+    background-image:url('./Imgs/Slider\ 1.jpg');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    }
+   </style>
+
+
+   <body>
+    <!-- _______ FOR MENU BAR _______ -->
+    <section  class="sub-header">
         <!-- Left box for logo -->
         <div class="left">
-           
-            <img src="imgs/logo.jpg" style="margin-left: 17%; "> <br>
-            <span style="color: black;"> <b> MK GALLARY </b></span> 
+            <img src="./Imgs/logo.png" alt="">
+            <!-- <div>Hotel Stay</div> -->
         </div>
-
-    <div class="mid" style="text-align: center; margin-top:10%;">
-        <h2 style="text-align: center; background-color: rgb(82, 10, 78); color: whitesmoke; font-weight: 900;"> <b>ABOUT US</b></h2> 
-    </div>
-       
-        <!-- right box for buttons -->
-        <div class="right"> 
+        <!-- mid box for navbar -->
+        <div class="mid">
             <ul class="navbar">
-                <li><a href="homepage.html" style="color: black;">Home</a></li>
-                <li><a href="gallery.html" style="color: black;">Art Gallary</a></li>
-                <li><a href="about.html"  class="active" style="color: black;">About Us</a></li>
-                <!-- <li><a href="login.html" style="color: black;">Sign In</a></li> -->
+                <li><a href="./Index.html" > Home</a></li>
+                <li><a href="./About.html" class="Active"> About us</a></li>
+                <li><a href="./services.html"> Services</a></li>
+                <li><a href="./contact.html"> Contact Us</a></li>
             </ul>
         </div>
-        </section>
-        <div class="container">
-        <section id ="content">
-        
-            <div class="img-section">
-                <img src="imgs/a.jpg" width="100%" alt="">
-            </div> 
-
-               <div class="article">
-                   <p>art gallery is a building or space for the display of art, usually from the museum's own collection. It might be in public or private ownership and may be accessible to all or have restrictions in place. Although primarily concerned with visual art, art museums are often used as a venue for other cultural exchanges and artistic activities, such as lectures, performance arts, music concerts, or poetry readings.</p>
-
-                   <p>Art galleries can showcase the history of a particular culture in a visual manner. As such, this visual history provides a snapshot of what life was like at a particular period of time through the artwork. For instance, the art may provide information about the people living in a particular time period.</p>
-
-                   <button type="button" class="btn btn-outline-secondary"> Read More </button> <br> <br>
-            
-               <div class="social">
-                        <a href="#" class="fa fa-facebook"></a>  
-                        <a href="#" class="fa fa-twitter"></a>   
-                        <a href="#" class="fa fa-linkedin"></a>  
-                        <a href="#" class="fa fa-instagram"></a>    
-                
-                    </div> <br>
-            </div> 
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn" onclick="CallUs()">Call Us Now</button>
+            <button class="btn" onclick="EmailUs()">Email us</button>
         </div>
+    </section>
+
+    <!-- ____Middle part____ -->
+    <section>
+        <div class="abttext">
+        <strong>ABOUT US</strong> <br>
+        <a href="" class=" mid-btn"> Read  More</a>
+    </div>
+    </section>
 
 
+     <!--_______FOR services______ -->   
+     <section id="about-container">
+
+            <em>OUR STORY AND VALUES</em>
+            <img src="./Imgs/HImg.jpg" alt="aboutimage" width="100%">
+            <div class="services">
+                 <p> A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided inside a hotel room may range from a modest-quality mattress in a small room to large suites with bigger, higher-quality beds, a dresser, a refrigerator and, upholstered chairs, a flat screen television, and en-suite bathrooms. Small, lower-priced hotels may offer only the most basic guest services and facilities. Larger, higher-priced hotels may provide additional guest facilities such as a swimming pool, business centre  childcare, conference and event facilities.tennis or basketball courts, gymnasium, restaurants, day spa, and social function services.
+                 Hotel rooms are usually numbered  to allow guests to identify their room. Some boutique, high-end hotels have custom decorated rooms.Hotel operations vary in size, function, complexity, and cost. Most hotels and major hospitality companies have set industry standards to classify hotel types. An upscale full-service hotel facility offers luxury amenities, full-service accommodations, an on-site restaurant, and the highest level of personalized service, such as a concierge, room service, and clothes pressing staff. Full-service hotels often contain upscale full-service facilities with many full-service accommodations, an on-site full-service restaurant, and a variety of on-site amenities.</p> 
+            </div>
         </section>
+
+    
+
+
+     <!-- _______ FOR FOOTER _______ -->
+     <footer class="footer">
+        <div class="footer-content">
+            <h4> @ All copyrights are Reserved By Mahima Kasliwal </h4>
+        </div>
+    </footer>
+</body>
+</html>
